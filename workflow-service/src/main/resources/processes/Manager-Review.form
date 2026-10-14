@@ -1,0 +1,140 @@
+{
+  "components": [
+    {
+      "label": "Loan Application Id",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1g0sy5h",
+        "columns": null
+      },
+      "id": "Field_1l2r85c",
+      "key": "loanApplicationId"
+    },
+    {
+      "label": "Applicant Name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1g0sy5h",
+        "columns": null
+      },
+      "id": "Field_1yyyp0h",
+      "key": "applicantName"
+    },
+    {
+      "label": "Loan Amount",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_15let7c",
+        "columns": null
+      },
+      "id": "Field_1xic268",
+      "key": "loanAmount"
+    },
+    {
+      "label": "Risk Level",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_15let7c",
+        "columns": null
+      },
+      "id": "Field_0ke01oe",
+      "key": "riskLevel"
+    },
+    {
+      "label": "Existing Debt Ratio (%)",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0u960l4",
+        "columns": null
+      },
+      "id": "Field_092a7bz",
+      "key": "existingDebtRatio"
+    },
+    {
+      "label": "Estimated Monthly EMI",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0u960l4",
+        "columns": null
+      },
+      "id": "Field_1sxxr0m",
+      "key": "estimatedMonthlyPayment"
+    },
+    {
+      "label": "Total Debt Ratio (%)",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_02vvjnn",
+        "columns": null
+      },
+      "id": "Field_0epqby3",
+      "key": "totalDebtRatio"
+    },
+    {
+      "label": "Details Summary",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_02vvjnn",
+        "columns": null
+      },
+      "id": "Field_0c18f6p",
+      "key": "assessmentSummary"
+    },
+    {
+      "label": "AI Summary",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_024rabr",
+        "columns": null
+      },
+      "id": "Field_0ux0je8",
+      "key": "ai_summary"
+    },
+    {
+      "label": "Reasons",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_024rabr",
+        "columns": null
+      },
+      "id": "Field_0r9q07n",
+      "key": "riskReasons"
+    },
+    {
+      "label": "Manager Decision",
+      "values": [
+        {
+          "label": "Approve",
+          "value": "APPROVE"
+        },
+        {
+          "label": "Reject",
+          "value": "REJECT"
+        },
+        {
+          "label": "Request Rework",
+          "value": "REWORK"
+        }
+      ],
+      "type": "select",
+      "layout": {
+        "row": "Row_0qbu85t",
+        "columns": null
+      },
+      "id": "Field_1vgrz3f",
+      "key": "decision",
+      "searchable": false,
+      "disabled": false,
+      "properties": {}
+    }
+  ],
+  "type": "default",
+  "id": "Manager-Review",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.9.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.51.1"
+  },
+  "schemaVersion": 19
+}

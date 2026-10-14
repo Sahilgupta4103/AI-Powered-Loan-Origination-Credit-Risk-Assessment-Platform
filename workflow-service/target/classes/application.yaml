@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: workflow-service
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: workflow-service-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/loan_db
+    username: loan_app_user
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  sql:
+      init:
+        mode: always
+
+server:
+  port: 8082
+
+camunda:
+  client:
+    mode: self-managed
+    grpc-address: http://localhost:26500
+    rest-address: http://localhost:8080
+    execution-threads: 2
+
+loan-service:
+  base-url: http://localhost:8081
+  auth:
+      username: ${LOAN_SERVICE_USERNAME}
+      password: ${LOAN_SERVICE_PASSWORD}
+
+ai-service:
+  base-url: http://localhost:8083
