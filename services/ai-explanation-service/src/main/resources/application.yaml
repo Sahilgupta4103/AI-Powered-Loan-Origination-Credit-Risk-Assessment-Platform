@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: ai-explanation-service
+  model:
+    embedding:
+      text: none
+  ai:
+    google:
+      genai:
+        api-key: ${GEMINI_API_KEY}
+        chat:
+          model: gemini-3.5-flash-lite
+
+server:
+  port: 8083
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+loan-service:
+  base-url: http://localhost:8081
+
+
